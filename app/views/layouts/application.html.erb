@@ -8,9 +8,22 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
   </head>
 
   <body>
-    <%= yield %>
+  <div class = 'header'>
+    <h1>My Blog</h1>
+    <%= link_to 'Home', articles_url %>
+  </div>
+    <div class = 'content'>
+      <%= yield %>
+    </div>
+    
+    <div class=footer>
+    <p>Proudly made in Yorkshire</p>
+    </div>
   </body>
 </html>

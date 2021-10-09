@@ -1,6 +1,6 @@
 <h1><%= @article.title %></h1>
 
-<p><%= @article.body %></p>
+<p class = 'body'><%= @article.body %></p>
 
 
 <ul>
@@ -9,7 +9,9 @@
                   method: :delete,
                   data: { confirm: "Are you sure?" } %></li>
 </ul>
+<div class = comments-section>
 <h2>Comments</h2>
 <%= render @article.comments %>
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
+</div>
