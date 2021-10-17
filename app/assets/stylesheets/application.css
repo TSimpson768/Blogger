@@ -28,11 +28,43 @@
  }
 
  .content {
-   width: 80%;
+   width: 800px;
    margin: auto;
    text-align: center;
+   min-height: 80%;
+
  }
 
  h1 {
    text-align: center;
+ }
+
+ a {
+  text-decoration: none;
+  color: black;
+ }
+
+ a:hover {
+   text-decoration: underline;
+ }
+
+ a:active {
+   color: orangered;
+ }
+
+ a:visited {
+  color: grey;
+ }
+ body {
+   background-color: white;
+   height: 100vh;
+ }
+
+ .header {
+   min-height: 10%;
+ }
+
+ .footer {
+   background-color: #ededed;
+   min-height: 10%;
  }
